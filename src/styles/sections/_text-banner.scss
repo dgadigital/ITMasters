@@ -1,0 +1,35 @@
+.text-banner {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 10;
+
+    .container {
+        max-width: 840px;
+    }
+    
+    .content {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        .cta {
+            padding-top: 30px;
+        }
+    }
+
+    h2 {
+        padding-bottom: 10px;
+        color: #fff; 
+    }
+    
+    sup {
+        top: -0.5em;
+        font-family: $font-ArabicMedium;
+        font-size: 60%;
+    }
+
+    p {
+      color: #fff;  
+    }
+}

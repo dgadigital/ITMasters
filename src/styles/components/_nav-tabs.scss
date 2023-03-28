@@ -1,0 +1,102 @@
+
+.nav-container {
+    @media(max-width: 991px) {
+        max-width: 991px;
+    }
+}
+
+.nav {
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &.orange {
+        .nav-item {
+            .nav-link {
+                &.active {
+                    background-color: $brand-color;
+    
+                    &:after {
+                        border-top: 15px solid $brand-color;
+                    }
+                }
+            }
+        }   
+    }
+
+    &.green {
+        .nav-item {
+            .nav-link {
+                &.active {
+                    background-color: $brand-green;
+    
+                    &:after {
+                        border-top: 15px solid $brand-green;
+                    }
+                }
+            }
+        }   
+    }
+
+    .nav-item {
+        flex-grow: 1;
+        flex-basis: 0;
+        min-width: 0;
+        
+        @media(max-width: 767px) {
+            width: 100%;
+            flex-basis: auto;
+        }
+
+        .nav-link {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 20px;
+            color: $text-color;
+            font-family: $font-ArabicMedium;
+            text-align: center;
+            border-radius: 0;
+            background-color: #f1f1f1;
+            height: 100%;
+
+            @media(max-width: 991px) {
+                font-size: 18px;
+            }
+
+            br {
+                @media(max-width: 991px) {
+                    display: none;
+                }
+            }
+
+            &.active {
+                color: #fff;
+
+                &:after {
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    border-right: 15px solid transparent;
+                    border-left: 15px solid transparent;
+                    display: block;
+                    margin: auto;
+                    position: absolute;
+                    bottom: -15px;
+                }
+            }
+        }
+    }
+
+    &.large {
+        font-size: 20px;
+    }
+
+    &.small {
+        font-size: 16px;
+    }
+}
+
+.tab-content {
+    padding-top: 50px;
+}

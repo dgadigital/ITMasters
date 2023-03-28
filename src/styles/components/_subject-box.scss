@@ -1,0 +1,44 @@
+.subjects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 315px);
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+
+    @media (max-width: 767px) {
+        grid-template-columns: repeat(auto-fill, 100%);
+    }
+
+    .item {
+        padding: 25px;
+        margin-bottom: 10px;
+        background-color: $subject-grey;
+        border: 1px solid $subject-border-grey;
+
+        &:hover {
+            background-color: $light-orange;
+            border: 1px solid $brand-color;
+            transition: all 0.3s;
+
+            .code {
+                color: #fff;
+                transition: all 0.3s;
+            }
+
+            .title {
+                color: #fff;
+                transition: all 0.3s;
+            }
+        }
+
+        .code {
+            font-family: $font-ArabicBold;
+            color: $text-color;
+        }
+
+        .title {
+            font-size: 14px;
+            color: $text-color;
+        }
+    }
+}

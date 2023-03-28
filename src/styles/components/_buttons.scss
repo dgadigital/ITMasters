@@ -1,0 +1,60 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.btn-solid {
+    padding: 13px 45px;
+    font-size: 16px;
+    border: 0;
+    border-radius: 0;
+    transition: all 0.3s;
+
+    .hero-banner &{
+        @media(max-width: 767px) {
+            background-color: $brand-green;
+        }
+    }
+
+    &.orange {
+        color: #fff;
+        background-color: $brand-color;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: #fff;
+            background-color: #c7350b;
+            transition: all 0.3s;
+        }
+    }
+
+    &.green {
+        color: #fff;
+        background-color: $brand-green;
+        
+        &:hover,
+        &:active,
+        &:focus {
+            color: #fff;
+            background-color: #034e46;
+            transition: all 0.3s;
+        }
+    }
+
+    &.white {
+        color: $text-color;
+        background-color: #fff;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $text-color;
+            background-color: #d2d2d2;
+            transition: all 0.3s;
+        }
+    }
+}
+
+

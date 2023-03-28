@@ -1,0 +1,31 @@
+.wpcf7 .wpcf7-not-valid-tip {
+    display: none;
+}
+
+.wpcf7 .form-control.wpcf7-not-valid {
+    border: 1px solid $brand-color;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output, 
+.wpcf7 form.unaccepted .wpcf7-response-output, 
+.wpcf7 form.payment-required .wpcf7-response-output {
+    border: 0;
+    text-align: center;
+    margin-top: 15px;
+    background: #ffb900;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.wpcf7 .sent .wpcf7-response-output {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #fff;
+    border: 0;
+    margin-top: 15px;
+    text-align: center;
+    background: $brand-green;
+}

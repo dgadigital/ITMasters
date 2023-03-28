@@ -1,0 +1,59 @@
+.floating-widget {
+    position: fixed;
+    top: 110px;
+    right: -2px;
+    transform: rotate(270deg);
+    z-index: 105;
+    transform-origin: right bottom;
+    
+    @media(max-width: 767px) {
+        display: none;
+    }
+
+    .floating-widget-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;
+
+        .item {
+            padding: 10px 25px 10px 25px;
+            font-size: 16px;
+
+            &:hover {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                transition: all 0.3s;
+            }
+
+            &.orange {
+                background-color: $brand-color;
+                a {
+                    color: #fff;
+                }
+            }
+
+            &.green {
+                background-color: $brand-green;
+                a {
+                    color: #fff;
+                }
+            }
+
+            &.white {
+                background-color: #fff;
+                border: 1px solid $subject-border-grey;
+
+                a {
+                    color: $text-color;
+                }
+            }
+            
+            span {
+                @media(max-height: 800px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

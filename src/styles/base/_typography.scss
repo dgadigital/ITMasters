@@ -1,0 +1,25 @@
+//main: ../main.scss
+
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $text-color;
+  font: normal 16px / 1.4 $font-ArabicRegular;
+}
+
+h1,
+h2 {
+  font-size: 55px;
+  font-family: $font-ArabicBold;
+
+  @media(max-width: 991px) {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  @media(max-width: 767px) {
+    font-size: 34px;
+    line-height: 40px;
+  }
+}

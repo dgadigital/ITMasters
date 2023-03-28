@@ -1,0 +1,15 @@
+
+.form-control {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+
+    font-size: 14px;
+
+
+    footer & {
+        border: 0;
+    }
+}

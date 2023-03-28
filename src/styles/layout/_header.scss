@@ -1,0 +1,216 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+header.sticky {
+    .navbar {
+        background-color: #fff;
+        box-shadow: 0 5px 14px -4px rgba(189,189,189,0.28);
+
+        @media (min-width: 1200px) {
+            .nav-top {
+                display: none;
+            }
+        }
+
+        .nav-menu .navbar-collapse {
+            box-shadow: none;
+        }
+    }
+}
+
+.nav-mobile-top {
+    display: none;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: $brand-green;
+    color: #fff;
+
+    @media (max-width: 767px) {
+        display: flex;
+    }
+
+    p {
+        margin: 0;
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+.navbar {
+    @media (max-width: 1199px) {
+        padding: 0;
+        background: #fff;
+        box-shadow: 0 5px 14px -4px rgba(189,189,189,0.28);
+    }
+
+    .container {
+        @media (max-width: 1199px) {
+            max-width: 100%;
+        }
+    }
+
+    .main-nav {
+        @media (max-width: 1199px) {
+            padding: 12px;
+        }
+    }
+
+    .nav-logo {
+        .desktop {
+            display: block;
+
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
+
+        .mobile {
+            display: none;
+
+            @media (max-width: 767px) {
+                display: block;
+            }
+        }
+    }
+
+    .nav-menu {
+        .nav-top {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-bottom: 8px;
+
+            @media (max-width: 1199px) {
+                padding: 0;
+            }
+    
+            p {
+                padding-right: 20px;
+                margin: 0;
+                font-family: $font-ArabicBold;
+                font-size: 16px;
+                color: #fff;
+
+                @media (max-width: 1199px) {
+                    color: $text-color;
+                }
+
+                span {
+                    font-family: $font-ArabicRegular;
+                }
+            }
+
+            .enrolments {
+                @media (max-width: 767px) {
+                    display: none;
+                }
+            }
+
+            .search {
+                position: relative;
+                padding-left: 12px;
+
+                @media (max-width: 1199px) {
+                    padding-right: 12px;
+                }
+
+                @media (min-width: 768px) {
+                    &:before {
+                        content: '';
+                        height: 80%;
+                        width: 1px;
+                        background-color: #fff;
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+    
+                        @media (max-width: 1199px) {
+                            background-color: $text-color;
+                        }
+                    }
+                }
+
+                img {
+                    @media (max-width: 1199px) {
+                        filter: brightness(0%);
+                    }
+                }
+            }
+
+            .navbar-toggler {
+                .fa-bars {
+                    color:#fff;
+                    font-size:28px;
+
+                    @media (max-width: 1199px) {
+                        color: $text-color;
+                    }
+                }
+            }
+        }
+
+        .navbar-collapse {
+            background-color: #fff;
+            box-shadow: -30px 10px 57px 3px rgba(115,115,115,0.18);
+
+            @media (max-width: 1199px) {
+                position: absolute;
+                top: 79px;
+                right: 12px;
+                width: 270px;
+            }
+            
+            @media (max-width: 767px) {
+                width: 100%;
+                right: 0;
+                left: 0;
+                top: 121px;
+            }
+        }
+        
+            .navbar-nav {
+
+                .nav-item {
+                    padding: 12px 14px;
+                    color: $text-color;
+                    font-size: 15px;
+                    white-space: nowrap;
+
+                    &:hover {
+                        color: $brand-color;
+                        font-family: $font-ArabicBold;
+                    }
+
+                    &::after {
+                        display: block;
+                        content: attr(title);
+                        font-family: $font-ArabicBold;
+                        height: 1px;
+                        color: transparent;
+                        overflow: hidden;
+                        visibility: hidden;
+                      }
+
+                    &:first-child {
+                        @media (min-width: 1200px) {
+                            padding-left: 30px;
+                        }
+                    }
+
+                    &:last-child {
+                        @media (min-width: 1200px) {
+                            padding-right: 30px;
+                        }
+                    }
+                }
+            }
+        
+    }
+
+}

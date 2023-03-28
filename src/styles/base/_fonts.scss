@@ -1,0 +1,11 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@include font-face($font-ArabicBlack, $base-url + 'fonts/', 'BasisGrotesqueArabicPro-Black', 'BasisGrotesqueArabicPro-Black');
+@include font-face($font-ArabicBold, $base-url + 'fonts/', 'BasisGrotesqueArabicPro-Bold', 'BasisGrotesqueArabicPro-Bold');
+@include font-face($font-Arabiclight, $base-url + 'fonts/', 'BasisGrotesqueArabicPro-Light', 'BasisGrotesqueArabicPro-Light');
+@include font-face($font-ArabicMedium, $base-url + 'fonts/', 'BasisGrotesqueArabicPro-Medium', 'BasisGrotesqueArabicPro-Medium');
+@include font-face($font-ArabicRegular, $base-url + 'fonts/', 'BasisGrotesqueArabicPro-Regular', 'BasisGrotesqueArabicPro-Regular');

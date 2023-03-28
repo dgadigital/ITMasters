@@ -1,0 +1,50 @@
+.fees {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    .regions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 30px;
+        padding-top: 10px;
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+
+        .item {
+            @media (min-width: 768px) {
+                display: flex;
+                align-items: center;
+            }
+            display: flex;
+                align-items: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            &:first-child {
+                @media (min-width: 768px) {
+                    padding-right: 45px;
+                    border-right: 2px solid #d4d4d4;
+                }
+            }
+
+            &:last-child {
+                @media (min-width: 768px) {
+                    padding-left: 45px;
+                }
+            }
+
+            p {
+                font-size: 20px;
+                font-family: $font-ArabicMedium;
+                margin: 0;
+            }
+            
+            .image {
+                padding-right: 20px;
+            }
+        }
+    }
+}

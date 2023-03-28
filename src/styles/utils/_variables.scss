@@ -1,0 +1,59 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+$font-opensans: 'Open Sans';
+$font-ArabicBlack: 'BasisGrotesqueArabicPro Black';
+$font-ArabicBold: 'BasisGrotesqueArabicPro Bold';
+$font-Arabiclight: 'BasisGrotesqueArabicPro Light';
+$font-ArabicMedium: 'BasisGrotesqueArabicPro Medium';
+$font-ArabicRegular: 'BasisGrotesqueArabicPro Regular';
+
+/// @type List
+$text-font-stack: $font-opensans, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+/// Copy text color
+/// @type Color
+$text-color: #1f1f1f !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: #da3c0e !default;
+$brand-green: #02564e !default;
+
+//Green Variant
+$mid-green: #509372 !default;
+
+//Orange variant
+$links: #da3c11 !default;
+$light-orange: #fb6033 !default;
+
+/// Light grey
+/// @type Color
+$light-grey: #EDEDED !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: #f4f4f4 !default;
+$footer-grey: #f7f7f7 !default;
+
+// grey variants
+$subject-grey: #f1f1f1 !default;
+$subject-border-grey: #d4d4d4 !default;
+/// Dark grey
+/// @type Color
+$semi-dark-grey: #ababab !default;
+$dark-grey: #4b4b4b !default;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '../assets/' !default;

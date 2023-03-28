@@ -1,0 +1,58 @@
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import
+  'utils/variables',
+  'utils/functions',
+  'utils/mixins';
+
+// 2. Vendors
+@import
+  'vendors/swiper',
+  'vendors/bootstrap',
+  'vendors/font-awesome',
+  'vendors/slick';
+
+// 3. Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
+
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/footer';
+
+// 5. Components
+@import
+  'components/hero-banner',
+  'components/buttons',
+  'components/course-box',
+  'components/forms',
+  'components/nav-tabs',
+  'components/subject-box',
+  'components/floating-widget',
+  'components/text-with-image',
+  'components/accordion',
+  'components/contact-form-7';
+
+// 6. Page-specific styles
+@import
+  'pages/home',
+  'pages/course';
+
+// 7. Sections
+@import
+  'sections/post-graduate-courses',
+  'sections/short-courses',
+  'sections/credits',
+  'sections/text-banner',
+  'sections/latest-news',
+  'sections/sample-assesment',
+  'sections/fees';
+
+// 8. Themes
+@import
+  'themes/default';
