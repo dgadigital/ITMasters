@@ -105,9 +105,17 @@ header.sticky {
             }
 
             .enrolments {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-right: 20px;
+
                 @media (max-width: 767px) {
                     display: none;
                 }
+
+                
             }
 
             .search {
@@ -181,7 +189,10 @@ header.sticky {
                     color: $text-color;
                     font-size: 15px;
                     white-space: nowrap;
-
+                    &.active{
+                        color: $brand-color;
+                        font-family: $font-ArabicBold;
+                    }
                     &:hover {
                         color: $brand-color;
                         font-family: $font-ArabicBold;
