@@ -12,14 +12,24 @@
     &.orange {
         .nav-item {
             .nav-link {
+
                 &.active {
-                    background-color: $brand-color;
-    
+                    background-color: $brand-color;                   
+                    border-right: 1px solid $brand-color;
+                    border-left: 1px solid $brand-color;
+
                     &:after {
-                        border-top: 15px solid $brand-color;
+                        border-top: 16px solid $brand-color;
+                        @media(max-width: 991px) {
+                            display: none;
+                        }
                     }
+
                 }
             }
+
+
+
         }   
     }
 
@@ -28,9 +38,12 @@
             .nav-link {
                 &.active {
                     background-color: $brand-green;
+                    
+                border-left: 1px solid $brand-green;
+                border-right: 1px solid $brand-green;
     
                     &:after {
-                        border-top: 15px solid $brand-green;
+                        border-top: 16px solid $brand-green;
                     }
                 }
             }
@@ -59,11 +72,17 @@
             border-radius: 0;
             background-color: #f1f1f1;
             height: 100%;
-
+            font-weight: bold;
+            border-left: 1px solid $subject-border-grey;
+            border-right: 1px solid $subject-border-grey;
+            
+            @media(max-width: 621px) {
+                border-left: 1px solid $subject-border-grey;
+                border-right: 1px solid $subject-border-grey;
+            }
             @media(max-width: 991px) {
                 font-size: 18px;
             }
-
             br {
                 @media(max-width: 991px) {
                     display: none;
@@ -83,11 +102,32 @@
                     margin: auto;
                     position: absolute;
                     bottom: -15px;
+
                 }
             }
         }
-    }
+        @media only screen and (min-width: 769px) {
+            &:first-child > .nav-link{
+                border-left:1px solid transparent;
+            }
+            &:last-child > .nav-link{
+                border-right:0px solid transparent;
+            }
+        }
 
+        @media only screen and (max-width: 768px) {
+            border-top: 1px solid $subject-border-grey;
+            border-bottom: 1px solid $subject-border-grey;
+            &:first-child{
+                border-bottom: 1px solid transparent;
+            }
+            &:last-child{
+                border-top: 1px solid transparent;
+            }
+        }
+
+
+    }
     &.large {
         font-size: 20px;
     }
