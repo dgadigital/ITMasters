@@ -1,3 +1,8 @@
+textarea{
+    &.form-control {
+        height: 100px;
+    }
+}
 
 .form-control {
     padding-top: 12px;
@@ -12,4 +17,14 @@
     footer & {
         border: 0;
     }
+}
+
+.form{
+    &br{
+        display: none;
+    }
+
+    input:not([type="submit"]) {
+        margin-bottom: 10px;
+      }
 }

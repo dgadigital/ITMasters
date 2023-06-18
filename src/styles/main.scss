@@ -41,7 +41,8 @@
 // 6. Page-specific styles
 @import
   'pages/home',
-  'pages/course';
+  'pages/course',
+  'pages/contact-us';
 
 // 7. Sections
 @import
@@ -51,7 +52,9 @@
   'sections/text-banner',
   'sections/latest-news',
   'sections/sample-assesment',
-  'sections/fees';
+  'sections/fees',
+  'sections/general',
+  'sections/two-column-text';
 
 // 8. Themes
 @import

@@ -46,10 +46,21 @@
   }
 
   &.green {
-      background-color: rgba(2, 85, 76, 0.71);
+      // background-color: rgba(2, 85, 76, 0.71);
+      background: linear-gradient(89.85deg, rgba(20, 66, 55, 0.7) 0.1%, rgba(79, 147, 114, 0.7) 99.85%);
   }
 }
 
 .dark-bg {
   background-color: $mid-grey;
 }
+
+.brand-color-text{
+color: $brand-color;
+}
+
+
+.black-color-text{
+  color: $black-text;
+  }
+

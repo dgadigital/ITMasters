@@ -17,6 +17,7 @@
             @media (min-width: 768px) {
                 display: flex;
                 align-items: center;
+                width: 30%;
             }
             display: flex;
                 align-items: center;
@@ -25,14 +26,15 @@
 
             &:first-child {
                 @media (min-width: 768px) {
-                    padding-right: 45px;
-                    border-right: 2px solid #d4d4d4;
+                    // padding-right: 45px;
+                    // border-right: 2px solid #d4d4d4;
+                    justify-content: flex-end;
                 }
             }
 
             &:last-child {
                 @media (min-width: 768px) {
-                    padding-left: 45px;
+                    // padding-left: 45px;
                 }
             }
 
@@ -45,6 +47,18 @@
             .image {
                 padding-right: 20px;
             }
+        }
+
+        .item-divider {
+            @media (max-width: 767px) {
+                display: none;
+            }
+
+
+            width: 2px;
+            background: #d4d4d4;
+            height: 93px;
+            margin: 0px 45px;
         }
     }
 }

@@ -105,9 +105,17 @@ header.sticky {
             }
 
             .enrolments {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-right: 20px;
+
                 @media (max-width: 767px) {
                     display: none;
                 }
+
+                
             }
 
             .search {
@@ -181,7 +189,10 @@ header.sticky {
                     color: $text-color;
                     font-size: 15px;
                     white-space: nowrap;
-
+                    &.active{
+                        color: $brand-color;
+                        font-family: $font-ArabicBold;
+                    }
                     &:hover {
                         color: $brand-color;
                         font-family: $font-ArabicBold;
@@ -213,4 +224,94 @@ header.sticky {
         
     }
 
+}
+
+#menu-main-menu {
+    @media (max-width: 1199px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 14px;
+    margin-bottom: 0px;
+    list-style: none;
+    
+    a {
+    padding: 12px 14px;
+    font-size: 15px;
+    white-space: nowrap;
+    }
+
+    li {
+
+        @media (max-width: 1199px) {
+            padding: 12px;
+        }
+
+
+        &:hover > a {
+          font-weight: bold;
+          color: $brand-color;
+        }
+
+
+        &.menu-item-has-children {
+        
+            &:hover > .sub-menu {
+              display: block;
+            }
+          }
+
+          ul.sub-menu {
+            list-style: none;
+            display: none;
+            padding: 0;
+            position: absolute;
+            top: 91%;
+            z-index: 9999;
+            background-color: #fff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        
+            li {
+              display: block;
+              width: 100%;
+              
+              a {
+                display: block;
+                text-decoration: none;
+                font-size: 14px;
+              }
+              
+              &:hover {
+                background-color: $brand-color;
+                
+                a {
+                  color: #ffffff;
+                }
+              }
+            }
+               
+            
+            
+             
+            }
+    }
+
+
+    .menu-item a {
+        color: #1f1f1f;
+        }
+    .current-menu-item {
+        a {
+            font-weight: bold;
+            color: $brand-color;
+        }
+    }
+    
+
+    
 }

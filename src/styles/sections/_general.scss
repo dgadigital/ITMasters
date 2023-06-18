@@ -1,0 +1,27 @@
+.general{
+
+    .row{
+       
+           .two-column-text-wrapper {
+                border-right: 1px solid $semi-dark-grey;
+
+
+                
+                .contact-title{
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: $brand-color;
+                    text-align: center;
+                }
+               
+               &:last-child{
+                   border: none;
+               }
+           }
+           &:not(:last-child) {
+            margin-bottom: 50px;
+          }
+          
+    }
+
+}
