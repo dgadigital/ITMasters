@@ -1,0 +1,85 @@
+.credit-table {
+    background-color: #fff;
+    border: 2px solid #F7F7F7;
+
+    &.border-none {
+        border: none;
+    }
+
+    .table-row {
+        display: flex;
+        border-bottom: 2px solid #F7F7F7;
+
+        flex-wrap: wrap;
+
+        @media (max-width: 767px) {
+            border-bottom: 2px solid $brand-color;
+        }
+
+        > div {
+            width: 25%;
+            padding: 15px;
+
+            @media (max-width: 991px) {
+                width: 25%;
+            }
+
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+
+            label {
+                display: none;
+                font-family: $font-ArabicMedium;
+
+                @media (max-width: 991px) {
+                    display: block;
+                }
+            }
+        }
+
+        // div.subject {
+        //     border-right: 2px solid #F7F7F7;
+        //     width: 30%;
+
+        //     @media (max-width: 991px) {
+        //         width: 100%;
+        //         text-align: center;
+        //         background-color: #e4e4e4;
+        //     }
+        // }
+
+        .inner {
+            text-align: center;
+
+            @media (max-width: 991px) {
+                border-right: 2px solid #F7F7F7;
+            }
+
+            @media (max-width: 767px) {
+                border-bottom: 2px solid #f7f7f7;
+            }
+        }
+
+        &.titles {
+            @media (max-width: 991px) {
+                display: none;   
+            }
+
+            .subject {
+                @media (max-width: 991px) {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            .inner {
+                @media (max-width: 991px) {
+                    display: none;   
+                }
+            }
+        }
+    }
+
+
+}

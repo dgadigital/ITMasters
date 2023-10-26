@@ -1,0 +1,281 @@
+.short-course-archive {
+    padding-top: 0;
+
+    .short-course-archive-wrapper {
+        &.container {
+            @media (min-width: 1200px) {
+                max-width: 1200px;
+            }
+        }
+    }
+
+    .title {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .category-bar {
+        position: sticky;
+        top: 71px;
+        z-index: 10;
+        padding: 0;
+        background-color: #fff;
+        box-shadow: 0 0 21px -1px rgba(115,115,115,.18);
+
+        @media(max-width: 1199px) {
+            top: 79px;
+        }
+
+        @media(max-width: 991px) {
+            top: 120px;
+        }
+
+        .container {
+            position: relative;
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+
+        .category-row {
+            overflow: hidden;
+        }
+        
+        .category-list {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            width: fit-content;
+            margin: auto;
+
+            &.slick-slider {
+                position: initial;
+            }
+
+            li {
+                position: relative;
+                padding: 12px 15px;
+                font-size: 14px;
+                white-space: nowrap;
+
+                &.active a {
+                    color: $brand-color;
+                    font-family: $font-ArabicBold;
+                }
+
+                a {
+                    color: #404041;
+                }
+            }
+
+            .slick-prev {
+                position: absolute;
+                left: 5px;
+                background-color: #fff;
+                background-image: url(../assets/images/catleft.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 24px;
+                height: 24px;
+                border: 0;
+                top: 50%;
+                transform: translateY(-50%);
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .slick-next {
+                position: absolute;
+                right: 5px;
+                background-color: #fff;
+                background-image: url(../assets/images/catright.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 24px;
+                height: 24px;
+                box-shadow: -15px 0 13px 5px snow;
+                border: 0;
+                top: 50%;
+                transform: translateY(-50%);
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    .short-courses-filters {
+        padding-bottom: 80px;
+
+
+        input[type=text]:hover,
+        input[type=text]:focus,
+        input[type=text]:active {
+            box-shadow: 0 0 21px -1px rgba(115,115,115,.18);
+        }
+
+        .filter-item {
+            margin-bottom: 20px;
+        }
+    }
+
+
+    .short-courses-list {
+
+        .title {
+            padding-bottom: 50px;
+        }
+    
+        .course-wrapper {
+            // display: flex;
+            // justify-content: space-between;
+            // flex-wrap: wrap;
+        }
+    
+        .course-item {
+            position: relative;
+            display: flex;
+            width: 100%;
+            margin-bottom: 50px;
+            background-color: #fff;
+            box-shadow: 0 0 21px -1px rgba(115,115,115,.18);
+            border-radius: 5px;
+            overflow: hidden;
+
+            @media(max-width: 991px) {
+                flex-direction: column;
+            }
+    
+            // @media(max-width: 991px) {
+            //     margin-bottom: 50px;
+            //     width: 100%;
+            // }
+    
+            // &:last-child {
+            //     @media(max-width: 991px) {
+            //         margin-bottom: 0;
+            //     }
+            // }
+            
+            .image-wrapper {
+                width: 20%;
+                padding: 20px 0 20px 20px;
+                transition: all 0.3s;
+
+                @media(max-width: 1199px) {
+                    width: 30%;
+                }
+
+                @media(max-width: 991px) {
+                    width: 100%;
+                    padding: 0;
+                }
+
+                .image {
+                    position: relative;
+                    padding-top: 18%;
+                    height: 100%;
+    
+                    @media(max-width: 991px) {
+                        padding-top: 58%;
+                    }
+
+                    img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+
+                    .overlay {
+                        z-index: 8;
+                        opacity: 0;
+                        transition: all 0.3s;
+                    }
+                }
+            }
+    
+            .content {
+                position: relative;
+                padding: 25px 25px 90px 25px;
+                background-color: #fff;
+                width: 80%;
+                border-bottom: 6px solid #fff;
+
+                @media(max-width: 1199px) {
+                    width: 80%;
+                }
+
+                @media(max-width: 991px) {
+                    width: 100%;
+                }
+    
+                h3 {
+                    padding-bottom: 5px;
+                    font-size: 22px;
+                    font-family: $font-ArabicMedium;
+                }
+
+                .pills {
+                    margin-bottom: 10px;
+
+                    span {
+                        display: inline-block;
+                        padding: 5px 10px;
+                        margin-right: 5px;
+                        margin-bottom: 5px;
+                        font-size: 12px;
+                        color: #fff;
+                        background-color: #a9a9a9;
+                    }
+                }
+
+                p {
+                    // margin-bottom: 0;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+    
+                a {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 25px;
+                    font-size: 15px;
+                    // font-family: $font-ArabicBold;
+                }
+            }
+
+            &:hover {
+
+                .content {
+                    border-bottom: 6px solid $brand-color;
+                    transition: all 0.3s;
+                }
+
+                .image-wrapper {
+                    padding: 0;
+                    transition: all 0.3s;
+
+                    .image {
+                        .overlay {
+                            opacity: 1;
+                            transition: all 0.3s;
+                        }
+                    }
+                }
+                
+            }
+        }
+    
+        .more {
+            padding-top: 70px;
+        }
+    }
+}

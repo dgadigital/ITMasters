@@ -27,17 +27,38 @@
             }
         }
 
-        .image {
+        .image,
+        .iframe {
             position: relative;
             padding-top: 58%;
 
-            img {
+            img,
+            iframe {
                 position: absolute;
                 top: 0;
                 left: 0;
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
+            }
+
+            .thumbnail {
+                cursor: pointer;
+
+                .play-youtube {
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    width: 128px;
+                    height: 128px;
+                    z-index: 100;
+                }
+
+                .thumbnail {
+                    z-index: 10;
+                }
             }
         }
 
@@ -69,5 +90,71 @@
 
     .more {
         padding-top: 70px;
+    }
+
+    &.featured-courses {
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        @media(max-width: 767px) {
+            padding-top: 50px;
+            padding-bottom: 70px;
+        }
+
+        .news-wrapper {
+            display: block;
+            position: initial;
+            max-width: 100vw;
+            width: 100%;
+        }
+
+        .news-item {
+            margin-left: 20px;
+            margin-right: 20px;
+            width: initial;
+    
+            @media(max-width: 991px) {
+                margin-bottom: 0;
+                width: initial;
+            }
+    
+            &:last-child {
+                @media(max-width: 991px) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .image:hover {
+            .overlay {
+                z-index: 10;
+            }
+        }
+
+        .content {
+            h3 {
+                display: -webkit-box;
+                padding-bottom: 0;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                height: 48px;
+            }
+        }
+
+        .pills {
+            margin-bottom: 50px;
+
+            span {
+                display: inline-block;
+                padding: 5px 10px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                font-size: 12px;
+                color: #fff;
+                background-color: #a9a9a9;
+            }
+        }
     }
 }

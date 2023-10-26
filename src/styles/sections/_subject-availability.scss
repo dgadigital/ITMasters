@@ -1,0 +1,20 @@
+.subject-availability {
+    
+    &.dark {
+        background-color: #f7f7f7;
+    }
+
+    h2 {
+        padding-bottom: 20px;
+        font-family: "BasisGrotesqueArabicPro Medium";
+        font-size: 28px;
+    }
+
+    #accordion {
+        .card {
+            .card-header {
+                font-size: 20px;
+            }
+        }
+    }
+}

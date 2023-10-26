@@ -1,0 +1,51 @@
+.credit-filter {
+    background-color: #F7F7F7;
+
+    h3 {
+        padding-bottom: 20px;
+        font-family: $font-ArabicMedium;
+        font-size: 20px;
+    }
+
+    .filters {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+
+        @media (max-width: 991px) {
+            padding-bottom: 30px;
+        }
+        
+        .item {
+            width: 18%;
+
+            @media (max-width: 991px) {
+                padding-bottom: 20px;
+                width: 48%;
+            }
+
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+
+            &:last-child {
+                @media (max-width: 991px) {
+                    width: 100%;
+                }
+            }
+
+            .btn {
+                @media (max-width: 991px) {
+                    width: 100%;
+                }
+            }
+        }
+
+        label {
+            font-family: $font-ArabicMedium;
+            font-size: 18px;
+        }
+    }
+}

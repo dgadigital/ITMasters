@@ -18,9 +18,10 @@
         // padding: 20px;
         // float: left;
         // width: 50%;
-        
 
-
+        &.with-border {
+            border: 2px solid #f7f7f7;
+        }
 
         .card-header {
             position: relative;
@@ -88,6 +89,11 @@
         .card-body {
             padding: 0;
             border-top: 1px solid #d4d4d4;
+
+            .card-body-content {
+                padding: 20px;
+                overflow: auto;
+            }
 
             .options {
                 padding: 0.75rem 1.25rem;

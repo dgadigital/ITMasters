@@ -7,11 +7,16 @@
     }
 
     .course-box-wrapper {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 220px);
-        justify-content: center;
-        flex-wrap: wrap;
+        // display: grid;
+        // grid-template-columns: repeat(auto-fill, 220px);
+        // justify-content: center;
+        // flex-wrap: wrap;
+        // column-gap: 58px;
+        display: flex;
         column-gap: 58px;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
 
         .course-box {
             margin-top: 60px;
