@@ -7,6 +7,51 @@ AppName.Modules.ThemeModule = (function () {
   ////////////////////
 
   const _mainNavToggler = () => {
+
+    
+    document.querySelectorAll(".more-info").forEach(function (button) {
+      button.addEventListener("click", function (e) {
+          e.preventDefault(); // Prevent default behavior
+
+          // Extract the product ID from the button's ID (e.g., "more-info-4616")
+          const productId = this.id.split("-")[2];
+          const accordion = document.getElementById(`id_${productId}`);
+          const header = document.querySelector(`#outer_${productId} .card-header`);
+
+          if (accordion) {
+              // Toggle the accordion
+              if (!accordion.classList.contains("show")) {
+                  // Open the accordion
+                  accordion.classList.add("show");
+                  if (header) header.classList.remove("collapsed");
+              } else {
+                  // Close the accordion
+                  accordion.classList.remove("show");
+                  if (header) header.classList.add("collapsed");
+              }
+
+              // Use a small timeout to ensure the accordion has updated its height
+              setTimeout(function () {
+                  // Calculate offset
+                  const offset = 250; // Adjust for fixed header height
+                  const elementPosition = accordion.getBoundingClientRect().top + window.scrollY;
+                  const offsetPosition = elementPosition - offset;
+
+                  // Smooth scroll to the accordion with offset
+                  window.scrollTo({
+                      top: offsetPosition,
+                      behavior: "smooth",
+                  });
+              }, 100); // Delay for the accordion height to adjust
+          }
+      });
+  });
+
+
+
+
+
+
     $('.navbar-main .navbar-toggler').click(() => {
       $('.navbar-main .navbar-collapse').toggleClass('show');
       $('body').toggleClass('no-scroll');
@@ -249,11 +294,57 @@ AppName.Modules.ThemeModule = (function () {
     });
   }
 
+  var _expandMobileDrawer = function () {
+    
+    $('.bar-top').on('click', function(e) {
+      $('.slide-drawer').toggleClass('active');
+    });
+
+    $(".slide-drawer a").each(function() {
+      $(this).on('click', function(e) {
+        var text = $(this).text();
+        $('.slide-drawer a').removeClass('selected');
+        $(this).addClass('selected');
+        $('.slide-drawer').toggleClass('active');
+        $('.bar-top').html(text);
+      });
+    }); 
+  }
+
+  var _stickynavSection = function () {
+    $(window).on("load scroll", function () {
+      if ($(this).scrollTop() > 87) {
+        $('.sticky_nav_slide').addClass('sticky');
+      } else {
+        $('.sticky_nav_slide').removeClass('sticky');
+      }
+    });
+  };
+
+  var _smoothscroll = function () {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          const offset = 200; // Adjust the offset as needed
+          const targetOffsetTop = targetElement.offsetTop - offset;
+  
+          window.scrollTo({
+              top: targetOffsetTop,
+              behavior: 'smooth'
+          });
+      });
+  });
+  }
+
   /////////////////////
   // Public Methods //
   ///////////////////
   const init = function () {
-    _stickynav();
+    _smoothscroll();
+    _expandMobileDrawer();
+    _stickynavSection();
     _banner_slider();
     _text_banner_slider();
     _categoryBar();

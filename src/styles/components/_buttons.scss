@@ -4,7 +4,9 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 
-.btn-solid {
+.btn-solid,
+.woocommerce-Button,
+.woocommerce-MyAccount-content button {
     padding: 13px 45px;
     font-size: 16px;
     border: 0;
@@ -54,6 +56,20 @@
             background-color: #d2d2d2;
             transition: all 0.3s;
         }
+    }
+}
+
+.woocommerce-Button,
+.woocommerce-MyAccount-content button {
+    color: #fff;
+    background-color: $brand-color;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: #fff;
+        background-color: #c7350b;
+        transition: all 0.3s;
     }
 }
 
