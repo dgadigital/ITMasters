@@ -37,13 +37,17 @@
   'components/floating-widget',
   'components/text-with-image',
   'components/accordion',
-  'components/contact-form-7';
+  'components/contact-form-7',
+  'components/credit-table',
+  'components/table-style';
 
 // 6. Page-specific styles
 @import
   'pages/home',
   'pages/course',
-  'pages/contact-us';
+  'pages/contact-us',
+  'pages/short-courses-archive',
+  'pages/news-single';
 
 // 7. Sections
 @import
@@ -56,7 +60,12 @@
   'sections/fees',
   'sections/general',
   'sections/testimonial_slider_section',
-  'sections/two-column-text';
+  'sections/two-column-text',
+  'sections/meet-the-team',
+  'sections/credit-filter',
+  'sections/subject-availability',
+  'sections/news-archive',
+  'sections/shop';
 
 // 8. Themes
 @import

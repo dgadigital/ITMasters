@@ -1,0 +1,38 @@
+
+.hero-banner.news-single-banner {
+    .banner-wrapper {
+        padding-top: 200px;
+        padding-bottom: 80px;
+
+        @media (max-width: 767px){
+            padding-top: 50px;
+        }
+
+        .banner-text {
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    .half-bg {
+        @media (max-width: 767px){
+            width: 100%;
+        }
+    }
+
+    .slick-dots {
+        display: none;
+    }
+}
+
+.news-content {
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+    .container {
+        @media (min-width: 1200px){
+            max-width: 991px;
+        }
+    }
+}

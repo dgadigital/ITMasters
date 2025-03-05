@@ -1,0 +1,172 @@
+.product-description {
+    
+    &.dark {
+        background-color: #f7f7f7;
+    }
+
+    h2 {
+        padding-bottom: 20px;
+        font-family: "BasisGrotesqueArabicPro Medium";
+        font-size: 28px;
+    }
+
+    #accordion {
+        .card {
+            .card-header {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .product-details-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .product-image {
+            width: 30%;
+            text-align: center;
+
+            @media (max-width: 767px) {
+                margin-bottom: 20px;
+                width: 100%;
+            }
+
+            img {
+                width: 50%;
+                max-width: 100%;
+            }
+        }
+
+        .product-content {
+            width: 65%;
+
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.wp-block-woocommerce-cart {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.wp-block-woocommerce-checkout {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.wp-block-woocommerce-empty-cart-block {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.wc-block-cart__submit-button,
+.wc-block-components-checkout-place-order-button {
+    margin-top: 20px;
+    color: #fff;
+    background-color: #da3c0e;
+    padding: 13px 45px;
+    font-size: 16px;
+    border: 0;
+    border-radius: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+
+    &:hover {
+        color: #fff;
+        background-color: #c7350b;
+        -webkit-transition: all .3s;
+        transition: all .3s;    
+    }
+}
+
+
+// MY ACCOUNT 
+.woocommerce-MyAccount-content {
+    .woocommerce-info {
+        .woocommerce-Button {
+            display: none;
+        }
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}
+
+.woocommerce-account {
+    .woocommerce {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+}
+
+.woocommerce {
+    .woocommerce-info {
+        border-top-color: #02564e;
+    
+        &:before {
+            color: #02564e;
+        }
+    }
+}
+
+.woocommerce-MyAccount-navigation {
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .woocommerce-MyAccount-navigation-link {
+        padding: 10px;
+        display: flex;
+
+        &:hover {
+            background: #da3c0e;
+            transition: 0.2s all;
+
+            a {
+                color: #fff;
+            }
+        }
+
+        a {
+            width: 100%;
+        }
+    }
+}
+
+.woocommerce-Addresses {
+    display: flex;
+    flex-direction: column;
+
+    .woocommerce-Address {
+        margin-top: 30px;
+        width: 100% !important;
+        max-width: 100% !important; 
+    }
+}
+
+.woocommerce-Address-title {
+    h2 {
+        font-size: 28px;
+    }
+}
+
+.woocommerce-address-fields {
+    label {
+        padding-right: 20px;
+    }
+}
+
+.woocommerce-order {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+    section {
+        padding: 0;
+    }
+}

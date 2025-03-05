@@ -25,6 +25,12 @@
             @media (max-width: 991px) {
                 width: 100%; 
             }
+
+            iframe {
+                width: 800px;
+                max-width: 100%;
+                margin: 0 auto;
+            }
         }
 
         .image {

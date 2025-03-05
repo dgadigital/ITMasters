@@ -4,18 +4,38 @@ textarea{
     }
 }
 
-.form-control {
+select {
+    min-height: 45px !important;
+    appearance: none;
+    background-image: url('../assets/images/select.png');
+    background-repeat: no-repeat;
+    background-position-x: 96%;
+    background-position-y: 50%;
+    padding-right: 40px !important;
+}
+
+.form-control,
+.woocommerce-Input,
+.input-text {
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 10px;
-
+    border: 1px solid #ced4da;
     font-size: 14px;
 
 
     footer & {
         border: 0;
+    }
+
+    &.border-none {
+        border: 0;
+    }
+
+    &.box-shadow {
+        box-shadow: 0 0 21px -1px rgba(115,115,115,.18);
     }
 }
 
@@ -27,4 +47,28 @@ textarea{
     input:not([type="submit"]) {
         margin-bottom: 10px;
       }
+}
+
+
+.input-text {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    font-size: 14px;
+
+
+    footer & {
+        border: 0;
+    }
+
+    &.border-none {
+        border: 0;
+    }
+
+    &.box-shadow {
+        box-shadow: 0 0 21px -1px rgba(115,115,115,.18);
+    }
 }
