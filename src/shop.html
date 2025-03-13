@@ -115,7 +115,63 @@
         </div>
       </div>
     </section>
-
+    <section class="product-courses_v2 pb-4">
+      <div class="container">
+          <div class="grid-container">
+              <!-- Filters -->
+              <div class="filter-wrapper">
+                  <div class="row">
+                      <div class="filter-item">
+                          <input type="text" class="form-control border-none box-shadow short-courses-search" placeholder="Search product...">
+                      </div>
+                      <div class="filter-item">
+                          <select class="form-control border-none box-shadow short-courses-brand">
+                              <option value="">Select Brand</option>
+                              <option value="comptia">CompTIA</option>                        </select>
+                      </div>
+                      <div class="filter-item">
+                          <select class="form-control border-none box-shadow short-courses-category">
+                              <option value="">Select Category</option>
+                              <option value="uncategorised">Uncategorised</option><option value="self-learning-resources">Self-Learning Resources</option>                        </select>
+                      </div>
+                      <div class="filter-item">
+                          <select class="form-control border-none box-shadow short-courses-stock">
+                              <option value="">Stock Status</option>
+                              <option value="instock">In Stock</option>
+                              <option value="outofstock">Out of Stock</option>
+                              <option value="onbackorder">On Backorder</option>
+                          </select>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Course Products (AJAX Updates This) -->
+              <div class="course-product-wrapper">            <div class="course-item">
+                  <div class="image-wrapper">
+                      <div class="image">
+                          <img src="http://localitmasters.test/wp-content/uploads/2025/01/Pentest-exam-voucher.png" alt="CompTIA PenTest+ (PT0-002) Voucher">
+                      </div>
+                  </div>
+                  <div class="content">
+                      <h3>CompTIA PenTest+ (PT0-002) Voucher</h3>
+                      <div class="bottom-card-wrapper">
+                          <p class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>599.00</span></p>
+                          <div class="btn-groups">
+                              <a href="http://localitmasters.test/product/comptia-pentest-pt0-002-voucher/" class="btn btn-solid orange add-to-cart" data-product-id="4676">
+                                  Add to Cart
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              </div>
+  
+              <!-- Pagination (AJAX Updates This) -->
+          </div>
+          <div class="pagination-wrapper"><button class="pagination-btn " data-page="1">1</button><button class="pagination-btn " data-page="2">2</button><button class="pagination-btn active" data-page="3">3</button><button class="pagination-btn " data-page="4">4</button><button class="pagination-btn " data-page="5">5</button><button class="pagination-btn " data-page="6">6</button></div>
+      </div>
+  </section>
+    
     <section class="product-courses pb-4">
         <div class="container">
         <div class="short-courses-list">
@@ -125,7 +181,6 @@
               <div class="image-wrapper">
                 <div class="image">
                   <a href="/">
-                    <div class="overlay green"></div>
                     <img src="./assets/images/news.png">
                   </a>
                 </div>
@@ -177,6 +232,7 @@
         </div>
         </div>
     </section>
+    
 
 
     <section class="product-description light small-padding">

@@ -1,0 +1,69 @@
+.single-product-details{
+
+
+    .price{
+        *{
+            color: #DC3A15;
+        }
+    
+    }
+
+    .woocommerce-product-gallery__trigger{
+        display: none;
+      }
+      
+      /* Ensure WooCommerce product image fills the column width */
+      .image-column.product-gallery,
+      .woocommerce-product-gallery,
+      .woocommerce-product-gallery__wrapper,
+      .woocommerce-product-gallery__wrapper img {
+          width: 100%!important;
+          max-width: 100%!important;
+      }
+
+      .product-description{
+        h2{    
+            color: #DC3A15;
+        }
+
+
+
+    }
+    #productAccordion {
+        .product-description {
+            #accordion {
+                    .card {
+    
+                        .card-header {
+                            border: 1px solid #949494;
+                            background: #F4F4F4;
+                            color: #DC3A15;        
+
+                        }
+    
+
+    
+                        .card-body {
+                            padding: 36px 96px;
+                            border-right: 1px solid #949494;
+                            border-bottom: 1px solid #949494;
+                            border-left: 1px solid #949494;
+                            background: #FFF;
+
+
+
+                            @media (max-width:990px) {
+                                padding: 15px 20px;
+
+                            }
+    
+
+    
+                        }
+                    }
+                
+            }
+        }
+    }    
+
+  }
