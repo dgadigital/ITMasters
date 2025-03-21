@@ -1,5 +1,28 @@
 .product-courses_v2 {
     .container {
+      .category-filter-buttons-wrapper{
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        margin-bottom: 50px;
+        flex-flow: row-reverse;
+        flex-wrap: wrap;
+        @media (max-width: 767px){
+          gap: 15px;
+        }
+      
+      .category-filter-button{
+       padding: 16px;
+       border-radius: 23px;
+          margin: 0;
+          font-family: "BasisGrotesqueArabicPro Bold";
+          font-size: 20px;
+          color: #fff; 
+          margin-bottom: 20px;
+      }
+      
+      }
+      
       .grid-container {
         display: grid;
         grid-template-columns: 1fr 3fr;
